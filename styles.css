@@ -149,6 +149,8 @@ p[class="days"] {
     border: 1px solid var(--white);
     border-radius: 100%;
     padding: 0;
+    width: 30px !important;
+    height: 30px !important;
 }
 
 .attributes {
