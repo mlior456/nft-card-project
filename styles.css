@@ -148,7 +148,6 @@ p[class="days"] {
 #avatar {
     border: 1px solid var(--white);
     border-radius: 100%;
-    border-style: hidden;
     padding: 0;
 }
 
