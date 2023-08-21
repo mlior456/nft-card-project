@@ -1,0 +1,178 @@
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --very-dark-blue1: hsl(217, 54%, 11%); /* main background */
+    --very-dark-blue2: hsl(216, 50%, 16%); /* card background */
+    --very-dark-blue3: hsl(215, 32%, 27%); /* line */
+    --white: hsl(0, 0%, 100%);
+}
+/* setting up font and fixing space on the sides of the page. */
+body {
+    font-family: "Outfit", sans-serif;
+    margin: 0; 
+}
+
+/* setting up the main size */
+main {
+    height: 98vh;
+    box-sizing: border-box;
+    border: 1px solid black;
+    background-color: var(--very-dark-blue1);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.main-div {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 260px;
+    height: 500px;
+    border: 1px solid hidden;
+    background-color: var(--very-dark-blue2);
+    border-radius: 10px;
+}
+
+.main-div p[class="title-paragraph"] {
+    color: var(--soft-blue);
+    font-weight: 200px;
+    font-size: 16px;
+}
+
+.main-div h3 {
+    color: var(--white);
+    font-weight: 600;
+    margin-top: -10px;
+    padding-bottom: 5px;
+}
+
+.main-div h3:hover {
+    color: var(--cyan);
+    cursor: pointer;
+
+}
+
+.main-div h3,.main-div p, .main-div .time-summary {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.img img:hover {
+    background: hsl(178, 100%, 50%, 0.5) !important;
+    cursor: pointer;
+    width: 85%;
+    height: 220;
+    inset: 0;
+    transition: all 0.25s ease;
+    content: url(./images/icon-view.svg);
+}
+
+.img {
+    padding-top: 10px;
+    opacity: 1;
+}
+
+.main-div img {
+    border-radius: 5px;
+    opacity: 1;
+}
+
+.time-summary {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin-left: -20px;
+    text-align: left;
+    float: left;
+    margin-top: -30px;
+}
+
+p[class="days"] {
+    color: var(--soft-blue);
+    font-size: 14px;
+}
+
+#icon {
+    position: relative;
+    top: 10%;
+    padding-right: 3px;
+}
+
+.eth {
+    color: var(--cyan);
+}
+
+.line {
+    width: 80%;
+    border: 1px solid var(--very-dark-blue3);
+    position: relative;
+    left: 10%;
+    top: -12.5px;
+}
+
+.credit{
+    margin-top: -15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#avatar, .credit {
+    padding-left: 20px;
+}
+
+.credit {
+    position: relative;
+    top: -25px;
+    color: var(--soft-blue);
+    margin-left: 35px;
+}
+
+#jules {
+    margin-right: 20px;
+    color: var(--white);
+}
+
+#jules:hover {
+    color: var(--cyan);
+    cursor: pointer;
+}
+
+
+#avatar {
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    border-style: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-div {
+        height: 90vh;
+        width: 40%;
+        overflow: scroll;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        scroll-behavior: smooth;
+    }
+    .main-div h3 {
+        padding-top: 25px;
+    }
+    .credit {
+        padding-top: 20px;
+        margin-right: 60px;
+        display: block;
+    }
+    span #jules {
+        margin-right: 30px;
+    }
+    .line {
+        margin-top: 15px;
+    }
+
+}
