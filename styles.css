@@ -123,7 +123,7 @@ p[class="days"] {
     justify-content: space-evenly;
 }
 
-#avatar, .credit {
+.credit {
     padding-left: 20px;
 }
 
@@ -142,16 +142,6 @@ p[class="days"] {
 #jules:hover {
     color: var(--cyan);
     cursor: pointer;
-}
-
-
-#avatar {
-    border: 1px solid var(--white);
-    border-radius: 100%;
-    padding: 0;
-    width: 30px !important;
-    height: 30px !important;
-    margin-right: 20px;
 }
 
 .attributes {
@@ -182,4 +172,17 @@ p[class="days"] {
         margin-top: 15px;
     }
 
+}
+
+
+div #avatar {
+    border-radius: 100%;
+    border: 1px solid white;
+    width: 30px !important;
+    height: 30px !important;
+    padding: 0;
+    display: flex;
+    position: relative;
+    top: -35%;
+    left: 7.5%;
 }
