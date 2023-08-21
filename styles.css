@@ -151,6 +151,7 @@ p[class="days"] {
     padding: 0;
     width: 30px !important;
     height: 30px !important;
+    margin-right: 20px;
 }
 
 .attributes {
