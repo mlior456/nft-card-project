@@ -151,6 +151,10 @@ p[class="days"] {
     border-style: hidden;
 }
 
+.attributes {
+    font-size: 18px;
+}
+
 @media only screen and (max-width: 768px) {
     .main-div {
         height: 90vh;
